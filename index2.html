@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="assets/js/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/styless.css" />
+
+  <script type="text/javascript" src="assets\js\script.js"></script>
+
+
+  <title>Conf Bs As</title>
+</head>
+
+<body>
+    <header>
+        <!--Menu-->
+    
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+    
+          
+          <div class="container-fluid card-text-bg-dark p-2">
+            <div class="navbar-header">
+            <img src="assets/img/la rural.png" alt="logo" width="30px" style="margin: 8px;"> 
+            <a class="navbar-brand text-light me-auto" href="file:///C:/Users/Luli/Documents/Luciana/C.C%20JS/Proyecto%20TP1/index.html#">Van Gogh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+          
+    
+          <ul class="nav justify-content-end">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="file:///C:/Users/Luli/Documents/Luciana/C.C%20JS/Proyecto%20TP1/index.html#presentacion">Presentación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="file:///C:/Users/Luli/Documents/Luciana/C.C%20JS/Proyecto%20TP1/index.html#obras">Obras</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="file:///C:/Users/Luli/Documents/Luciana/C.C%20JS/Proyecto%20TP1/index.html#info">Información</a>
+                  </li>
+                
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="file:///C:/Users/Luli/Documents/Luciana/C.C%20JS/Proyecto%20TP1/index.html#preguntas">Preguntas</a>
+                </li>
+                <li class="nav-item-tickets">
+                  <a class="nav-link active text-success" aria-current="page" href="#tickets">Comprar tickets</a>
+                </li>
+            </ul>
+            </div>
+          </ul>
+          </div>
+        </nav>
+      </header>
+      
+  <main>
+    <br>
+    <section>
+      <!-- Cards descuento  -->
+      <div class="container fluid d-flex justify-content-center ">
+        <!--Card 1-->
+        <div class="card-group " style="width: 46rem;">
+          <div class="card border border-primary text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Estudiante</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"> <strong>80%</strong></p>
+              <p class="card-text text-muted"> <small> *presentar documentación</small></p>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="card border border-success text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Trainee</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"> <strong>50%</strong></p>
+              <p class="card-text text-muted"><small> *presentar documentación</small></p>
+            </div>
+          </div>
+          <!--Card 3-->
+          <div class="card border border-warning text-center mx-1">
+            <div class="card-body">
+              <p class="card-text h4">Junior</p>
+              <p class="card-text">Tiene un descuento</p>
+              <p class="card-text"> <strong>15%</strong></p>
+              <p class="card-text text-muted"><small> *presentar documentación</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <p class="text-uppercase pt-2 mb-0 text-center">
+          <small>venta</small>
+        </p>
+        <p class="h3 text-uppercase text-center">valor de ticket $200</p>
+      </div>
+    </section>
+
+    <section>
+      <!-- Formulario  -->
+
+      <div class="container-fluid col-9">
+        <form class="row g-3" id="formulario">
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" aria-label="Nombre" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" aria-label="Apellido" required>
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Correo" aria-label="Correo" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputCantidad" class="form-label">Cantidad</label>
+            <input type="number" min="1" pattern="^[1-9]\d*$" class="form-control" placeholder="cantidad" id="cantidad">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCategoria" class="form-label">Categoría</label>
+            <select class="form-select" id="categoria">
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+              <option value="0">General</option>
+            </select>
+          </div>
+
+          <div class="alert alert-primary" role="alert">
+            <p class="mb-0" id="totalPag">Total a Pagar: $</p>
+          </div>
+
+          <div class="col">
+            <button class="btn btn-success col-sm-12  botonEnviar" type="reset" id="btnLimpiar"
+              onclick="limpiar()">Borrar</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-success col-sm-12 botonEnviar" type="button" id="btnResumen"
+              onclick="suma()">Resumen</button>
+          </div>
+      </div>
+
+      </form>
+      </div>
+    </section>
+    <br>
+  </main>
+  <!-- Pie de página -->
+
+  <footer>
+    <div class="pie-de-pag container-fluid text-center">
+    <div class="row p-3">
+      
+      
+      <div class="col-sm  p-2">
+        <a class="nav-link active text-light" href="#preguntas">Preguntas frecuentes</a>
+      </div>
+      <div class="col-sm  p-2 ">
+        <a  class="nav-link active text-light" href="#">Contáctanos</a>
+      </div>
+      <div class="col-sm  p-2 ">
+        <a class="nav-link active text-light" href="#">Privacidad de datos</a>
+      </div>
+      <div class="col-sm  p-2">
+        <a class= "nav-link active text-light" href="#">Comprar Tickets</a>
+      </div>
+      <div class="col-sm  p-2">
+        <a class="nav-link active text-light" href="#">Ubicación</a>
+      </div>
+      
+    </div>
+  </div>
+  </footer>
+
+
+  <script src="assets\js\bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -6,11 +6,8 @@ body{
   
 
 
-.pie-de-pag{margin: auto;
-    background: rgb(8,42,115);
+.pie-de-pag {margin: auto;
     background: linear-gradient(90deg, rgba(8,42,115,1) 0%, rgba(7,79,91,1) 61%, rgba(9,107,133,1) 100%);
-    text-decoration: none
-
 }
 
 .card-img {
