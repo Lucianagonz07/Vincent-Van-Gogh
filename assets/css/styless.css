@@ -5,14 +5,10 @@ body{
   }
   
 
-
-.pie-de-pag {margin: auto;
-    background: linear-gradient(90deg, rgba(8,42,115,1) 0%, rgba(7,79,91,1) 61%, rgba(9,107,133,1) 100%);
-}
-
 .card-img {
 opacity: 1.0;
 }
+
 
 .present {
 text-align: right;
@@ -20,5 +16,18 @@ text-align: right;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 
 }
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pie-de-pag {
+  margin: auto;
+  background: linear-gradient(90deg, rgba(8,42,115,1) 0%, rgba(7,79,91,1) 61%, rgba(9,107,133,1) 100%);
+}
+
